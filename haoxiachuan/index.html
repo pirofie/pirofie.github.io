@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>豪侠传-武侠世界门派江湖与侠客传奇指南</title>
+<meta name="description" content="豪侠传专题页面，梳理武侠江湖中的门派体系、侠客类型、经典桥段与阅读观看建议，帮助读者快速了解豪侠传相关作品的世界观与看点。">
+<meta name="keywords" content="豪侠传,武侠,江湖,门派,侠客,武侠小说,武侠影视,豪侠">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1c1a17;
+  --ink-soft:#4a443c;
+  --paper:#f4ede0;
+  --paper-deep:#e8dcc6;
+  --gold:#b8863b;
+  --gold-light:#d9ad63;
+  --crimson:#8c2f26;
+  --crimson-deep:#5e1d17;
+  --jade:#3f6b58;
+  --line:rgba(28,26,23,.14);
+  --shadow:0 10px 30px rgba(28,26,23,.12);
+  --radius:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Songti SC","STSong","SimSun","Noto Serif SC",serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+
+/* 顶部 */
+.topbar{
+  background:var(--crimson-deep);
+  color:#f0e3cb;
+  font-size:.82rem;
+  letter-spacing:.08em;
+  padding:.5rem 0;
+}
+.topbar .wrap{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:.4rem;
+}
+.wrap{
+  width:min(1180px,92%);
+  margin:0 auto;
+}
+
+/* 页眉 */
+header.site-header{
+  background:
+    radial-gradient(circle at 12% 20%,rgba(184,134,59,.18),transparent 55%),
+    radial-gradient(circle at 88% 80%,rgba(140,47,38,.16),transparent 55%),
+    var(--paper);
+  border-bottom:1px solid var(--line);
+  position:relative;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5rem;
+  padding:1.4rem 0;
+  flex-wrap:wrap;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:.85rem;
+}
+.brand-mark{
+  width:52px;height:52px;
+  border-radius:50%;
+  background:linear-gradient(145deg,var(--crimson),var(--crimson-deep));
+  color:var(--gold-light);
+  display:grid;place-items:center;
+  font-size:1.5rem;
+  font-weight:700;
+  box-shadow:inset 0 0 0 2px rgba(217,173,99,.55);
+  flex:none;
+}
+.brand-text h1{
+  font-size:1.55rem;
+  letter-spacing:.22em;
+  font-weight:700;
+  line-height:1.2;
+}
+.brand-text p{
+  font-size:.78rem;
+  color:var(--ink-soft);
+  letter-spacing:.3em;
+  margin-top:.15rem;
+}
+.header-side{
+  text-align:right;
+  font-size:.86rem;
+  color:var(--ink-soft);
+  max-width:340px;
+}
+.header-side strong{color:var(--crimson);}
+
+/* 导航 */
+nav.main-nav{
+  background:var(--ink);
+  position:sticky;
+  top:0;
+  z-index:40;
+  box-shadow:0 4px 18px rgba(0,0,0,.18);
+}
+nav.main-nav ul{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.2rem;
+}
+nav.main-nav a{
+  display:block;
+  color:#e7dcc6;
+  padding:.85rem 1.15rem;
+  font-size:.95rem;
+  letter-spacing:.12em;
+  border-bottom:3px solid transparent;
+  transition:.25s;
+}
+nav.main-nav a:hover{
+  color:var(--gold-light);
+  border-bottom-color:var(--gold);
+  background:rgba(255,255,255,.05);
+}
+
+/* 首屏 */
+.hero{
+  padding:3.2rem 0 2.6rem;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(232,220,198,.7),rgba(244,237,224,0));
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.35fr 1fr;
+  gap:2.6rem;
+  align-items:start;
+}
+.hero-kicker{
+  display:inline-block;
+  font-size:.78rem;
+  letter-spacing:.34em;
+  color:var(--crimson);
+  border:1px solid rgba(140,47,38,.35);
+  padding:.3rem .8rem;
+  border-radius:999px;
+  margin-bottom:1rem;
+}
+.hero h2{
+  font-size:clamp(1.7rem,3.4vw,2.5rem);
+  line-height:1.45;
+  letter-spacing:.06em;
+  margin-bottom:1rem;
+}
+.hero h2 em{
+  font-style:normal;
+  color:var(--crimson);
+  border-bottom:3px solid var(--gold-light);
+  padding-bottom:.05em;
+}
+.hero p.lead{
+  font-size:1.02rem;
+  color:var(--ink-soft);
+  max-width:46em;
+}
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.9rem;
+  margin-top:1.7rem;
+}
+.btn{
+  display:inline-block;
+  padding:.72rem 1.6rem;
+  border-radius:var(--radius);
+  font-size:.95rem;
+  letter-spacing:.14em;
+  transition:.25s;
+  border:1px solid transparent;
+}
+.btn-primary{
+  background:linear-gradient(140deg,var(--crimson),var(--crimson-deep));
+  color:#f7ead2;
+  box-shadow:0 6px 18px rgba(140,47,38,.28);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(140,47,38,.36);}
+.btn-ghost{
+  border-color:var(--gold);
+  color:var(--crimson-deep);
+}
+.btn-ghost:hover{background:rgba(184,134,59,.14);}
+
+.hero-panel{
+  background:#fffaf0;
+  border:1px solid var(--line);
+  border-top:4px solid var(--crimson);
+  border-radius:var(--radius);
+  padding:1.5rem 1.6rem;
+  box-shadow:var(--shadow);
+}
+.hero-panel h3{
+  font-size:1.05rem;
+  letter-spacing:.2em;
+  margin-bottom:1rem;
+  color:var(--crimson-deep);
+}
+.hero-panel dl{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:.55rem 1rem;
+  font-size:.92rem;
+}
+.hero-panel dt{
+  color:var(--gold);
+  letter-spacing:.1em;
+  white-space:nowrap;
+}
+.hero-panel dd{color:var(--ink-soft);}
+
+/* 通用区块 */
+section.block{
+  padding:3.4rem 0;
+  border-bottom:1px solid var(--line);
+}
+.section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:1.2rem;
+  flex-wrap:wrap;
+  margin-bottom:2rem;
+}
+.section-head h2{
+  font-size:1.5rem;
+  letter-spacing:.18em;
+  position:relative;
+  padding-left:1rem;
+}
+.section-head h2::before{
+  content:"";
+  position:absolute;
+  left:0;top:.18em;
+  width:5px;height:1.05em;
+  background:linear-gradient(180deg,var(--gold),var(--crimson));
+  border-radius:2px;
+}
+.section-head p{
+  font-size:.9rem;
+  color:var(--ink-soft);
+  max-width:44em;
+}
+
+/* 门派卡片 */
+.sect-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1.3rem;
+}
+.sect-card{
+  background:#fffaf0;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:1.4rem 1.4rem 1.5rem;
+  transition:.25s;
+  position:relative;
+  overflow:hidden;
+}
+.sect-card::after{
+  content:"";
+  position:absolute;
+  right:-30px;bottom:-30px;
+  width:90px;height:90px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(184,134,59,.16),transparent 70%);
+}
+.sect-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow);
+  border-color:rgba(184,134,59,.5);
+}
+.sect-card h3{
+  font-size:1.1rem;
+  letter-spacing:.14em;
+  margin-bottom:.6rem;
+  color:var(--crimson-deep);
+}
+.sect-tag{
+  display:inline-block;
+  font-size:.72rem;
+  letter-spacing:.16em;
+  color:var(--jade);
+  border:1px solid rgba(63,107,88,.4);
+  border-radius:999px;
+  padding:.12rem .6rem;
+  margin-bottom:.7rem;
+}
+.sect-card p{
+  font-size:.9rem;
+  color:var(--ink-soft);
+}
+
+/* 侠客类型 */
+.hero-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.2rem;
+}
+.hero-item{
+  display:flex;
+  gap:1rem;
+  background:#fffaf0;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:1.2rem;
+}
+.hero-num{
+  font-family:Georgia,serif;
+  font-size:1.6rem;
+  color:var(--gold);
+  line-height:1;
+  flex:none;
+  width:2.2rem;
+}
+.hero-item h3{
+  font-size:1rem;
+  letter-spacing:.1em;
+  margin-bottom:.35rem;
+}
+.hero-item p{
+  font-size:.88rem;
+  color:var(--ink-soft);
+}
+
+/* 桥段与看点 */
+.trope-wrap{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:2.2rem;
+  align-items:start;
+}
+.trope-list li{
+  padding:.85rem 0;
+  border-bottom:1px dashed var(--line);
+  display:flex;
+  gap:.9rem;
+  font-size:.94rem;
+}
+.trope-list li:last-child{border-bottom:none;}
+.trope-list b{
+  color:var(--crimson);
+  letter-spacing:.08em;
+  flex:none;
+}
+.trope-list span{color:var(--ink-soft);}
+.aside-note{
+  background:linear-gradient(160deg,#2a2620,#1c1a17);
+  color:#e6d9bf;
+  border-radius:var(--radius);
+  padding:1.6rem 1.5rem;
+  box-shadow:var(--shadow);
+}
+.aside-note h3{
+  font-size:1.02rem;
+  letter-spacing:.2em;
+  color:var(--gold-light);
+  margin-bottom:.9rem;
+}
+.aside-note p{
+  font-size:.9rem;
+  color:#c9bda4;
+  margin-bottom:.8rem;
+}
+.aside-note p:last-child{margin-bottom:0;}
+
+/* 阅读与观看建议 */
+.guide-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.2rem;
+}
+.guide-card{
+  border-left:3px solid var(--gold);
+  background:rgba(255,250,240,.85);
+  padding:1.2rem 1.3rem;
+  border-radius:0 var(--radius) var(--radius) 0;
+}
+.guide-card h3{
+  font-size:1rem;
+  letter-spacing:.1em;
+  margin-bottom:.5rem;
+  color:var(--crimson-deep);
+}
+.guide-card p{
+  font-size:.88rem;
+  color:var(--ink-soft);
+}
+
+/* 常见问题 */
+.faq-list{
+  max-width:900px;
+}
+.faq-item{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:#fffaf0;
+  margin-bottom:.9rem;
+  overflow:hidden;
+}
+.faq-item summary{
+  cursor:pointer;
+  padding:1rem 1.2rem;
+  font-size:.98rem;
+  letter-spacing:.08em;
+  color:var(--crimson-deep);
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{
+  content:"＋";
+  color:var(--gold);
+  font-size:1.05rem;
+  transition:.25s;
+}
+.faq-item[open] summary::after{transform:rotate(45deg);}
+.faq-item .faq-body{
+  padding:0 1.2rem 1.1rem;
+  font-size:.9rem;
+  color:var(--ink-soft);
+}
+
+/* 页脚 */
+footer.site-footer{
+  background:var(--ink);
+  color:#b8ac93;
+  padding:2.6rem 0 1.6rem;
+  font-size:.86rem;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:2rem;
+  padding-bottom:1.8rem;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.footer-grid h4{
+  color:var(--gold-light);
+  font-size:.95rem;
+  letter-spacing:.18em;
+  margin-bottom:.9rem;
+}
+.footer-grid p{color:#9d9179;line-height:1.9;}
+.footer-grid li{margin-bottom:.45rem;}
+.footer-grid a:hover{color:var(--gold-light);}
+.copyright{
+  text-align:center;
+  padding-top:1.3rem;
+  color:#7e7461;
+  font-size:.8rem;
+  letter-spacing:.1em;
+}
+
+/* 响应式 */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .trope-wrap{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:600px){
+  .header-inner{flex-direction:column;align-items:flex-start;}
+  .header-side{text-align:left;}
+  nav.main-nav a{padding:.7rem .85rem;font-size:.88rem;}
+  .hero{padding:2.2rem 0 1.8rem;}
+  section.block{padding:2.4rem 0;}
+  .footer-grid{grid-template-columns:1fr;}
+  .hero-panel dl{grid-template-columns:1fr;gap:.2rem .0;}
+  .hero-panel dt{margin-top:.5rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>武侠江湖 · 门派侠客 · 传奇故事梳理</span>
+    <span>以侠义为骨，以江湖为卷</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">侠</div>
+      <div class="brand-text">
+        <h1>豪侠传</h1>
+        <p>江湖门派与侠客传奇</p>
+      </div>
+    </div>
+    <div class="header-side">
+      <p>从门派体系到侠客类型，从经典桥段到阅读顺序，<strong>为武侠爱好者梳理一条清晰的入门路径。</strong></p>
+    </div>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="主导航">
+  <div class="wrap">
+    <ul>
+      <li><a href="#intro">江湖概述</a></li>
+      <li><a href="#sects">门派体系</a></li>
+      <li><a href="#heroes">侠客类型</a></li>
+      <li><a href="#tropes">经典桥段</a></li>
+      <li><a href="#guide">阅读建议</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-kicker">武侠世界入门</span>
+        <h2>豪侠传讲的是什么？<em>先弄清江湖的骨架</em></h2>
+        <p class="lead">
+          “豪侠传”通常指以豪侠为主角、以江湖恩怨与家国大义为背景的武侠故事。这类作品的核心并不只是打斗，
+          而是围绕门派、师承、道义与抉择展开的人物群像。想读懂它，先要理解三件事：江湖由哪些门派构成、
+          侠客分成哪几种类型、故事靠哪些经典桥段推进。下面按这个顺序展开。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#sects">查看门派体系</a>
+          <a class="btn btn-ghost" href="#guide">阅读与观看建议</a>
+        </div>
+      </div>
+      <aside class="hero-panel">
+        <h3>快速了解</h3>
+        <dl>
+          <dt>题材</dt><dd>武侠、江湖、侠义传奇</dd>
+          <dt>核心元素</dt><dd>门派、师承、武功、道义</dd>
+          <dt>常见载体</dt><dd>武侠小说、影视剧、漫画、游戏</dd>
+          <dt>适合人群</dt><dd>武侠爱好者与初次接触者</dd>
+          <dt>阅读重点</dt><dd>人物动机与江湖规则</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 门派体系 -->
+  <section class="block" id="sects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>江湖门派体系</h2>
+        <p>门派是武侠故事的基本单位，决定了人物的出身、立场与武功路数。不同作品设定各异，但大致可归为以下几类。</p>
+      </div>
+      <div class="sect-grid">
+        <article class="sect-card">
+          <span class="sect-tag">名门正派</span>
+          <h3>正道大派</h3>
+          <p>通常拥有完整的传承谱系与门规，讲究名正言顺。人物往往背负门派声誉，行动受规矩约束，也更容易卷入正邪之争。</p>
+        </article>
+        <article class="sect-card">
+          <span class="sect-tag">亦正亦邪</span>
+          <h3>江湖散派</h3>
+          <p>不依附大门派，行事风格自由。这类设定常用于塑造性格鲜明、不受束缚的角色，也常成为剧情转折的关键变量。</p>
+        </article>
+        <article class="sect-card">
+          <span class="sect-tag">隐秘传承</span>
+          <h3>隐世宗门</h3>
+          <p>地处偏远、少与外界往来，往往掌握独特武功或秘密。其出现通常意味着主线线索的推进或世界观层次的扩展。</p>
+        </article>
+        <article class="sect-card">
+          <span class="sect-tag">对立阵营</span>
+          <h3>邪道势力</h3>
+          <p>与正道形成对照，但优秀作品很少将其简单脸谱化。人物的动机、过往与选择，往往比阵营标签更值得关注。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 侠客类型 -->
+  <section class="block" id="heroes">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>豪侠的几种典型形象</h2>
+        <p>“豪侠”二字，重点在“豪”与“侠”。豪是气度，侠是担当。以下类型是武侠作品中最常见的几种人物原型。</p>
+      </div>
+      <div class="hero-list">
+        <article class="hero-item">
+          <div class="hero-num">壹</div>
+          <div>
+            <h3>重义轻利的义侠</h3>
+            <p>把承诺与情义看得比利益更重，常因一句诺言赴汤蹈火。这类角色是“侠”字最直接的体现。</p>
+          </div>
+        </article>
+        <article class="hero-item">
+          <div class="hero-num">贰</div>
+          <div>
+            <h3>快意恩仇的豪侠</h3>
+            <p>行事果决、爱憎分明，讲究有恩报恩、有仇报仇。其魅力在于坦荡，其困境往往来自分寸的把握。</p>
+          </div>
+        </article>
+        <article class="hero-item">
+          <div class="hero-num">叁</div>
+          <div>
+            <h3>家国为先的大侠</h3>
+            <p>个人恩怨让位于家国大义，人物格局更大，也更容易面临两难抉择，是长篇故事常用的主线人物。</p>
+          </div>
+        </article>
+        <article class="hero-item">
+          <div class="hero-num">肆</div>
+          <div>
+            <h3>亦正亦邪的奇侠</h3>
+            <p>行事不循常规，立场难以简单归类。这类角色常承担推动剧情与打破僵局的功能，也最考验塑造功力。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 经典桥段 -->
+  <section class="block" id="tropes">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>推动故事的经典桥段</h2>
+        <p>武侠叙事经过长期积累，形成了一批高频桥段。理解它们，有助于更快进入故事节奏。</p>
+      </div>
+      <div class="trope-wrap">
+        <ul class="trope-list">
+          <li><b>拜师学艺</b><span>交代人物起点与武功来源，也奠定师门情谊这条重要情感线。</span></li>
+          <li><b>门派之争</b><span>通过立场冲突制造矛盾，是展开群像与世界观的主要方式。</span></li>
+          <li><b>比武论剑</b><span>既是武学较量，也是人物性格与境界的集中展示。</span></li>
+          <li><b>误会与和解</b><span>推动情感转折，考验人物在信息不全时的判断与选择。</span></li>
+          <li><b>隐忍与复仇</b><span>常见的人物驱动力，优秀作品会着重描写复仇之后的心境变化。</span></li>
+          <li><b>归隐江湖</b><span>作为收束方式，回应“侠客最终去向何处”这一经典命题。</span></li>
+        </ul>
+        <aside class="aside-note">
+          <h3>阅读提示</h3>
+          <p>桥段本身并不等于套路。同样的情节，在不同作品里因人物动机与代价不同，呈现出的重量也完全不同。</p>
+          <p>与其记桥段名称，不如留意人物在每个节点上“为什么这样选”。这才是武侠故事真正的看点。</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 阅读与观看建议 -->
+  <section class="block" id="guide">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>阅读与观看建议</h2>
+        <p>不同载体的体验差异较大，可以按自己的时间与偏好选择入口。</p>
+      </div>
+      <div class="guide-grid">
+        <article class="guide-card">
+          <h3>从短篇入手</h3>
+          <p>时间有限时，可先从中短篇或单元式故事读起，熟悉人物关系与叙事节奏，再进入长篇。</p>
+        </article>
+        <article class="guide-card">
+          <h3>按人物线索读</h3>
+          <p>若对某位侠客感兴趣，可围绕其出场章节集中阅读，人物线往往比时间线更容易建立代入感。</p>
+        </article>
+        <article class="guide-card">
+          <h3>影视与原著对照</h3>
+          <p>影视改编节奏更快、画面直观，原著在心理描写与细节上更完整。两者对照观看，理解会更立体。</p>
+        </article>
+        <article class="guide-card">
+          <h3>关注版本差异</h3>
+          <p>同一故事可能存在多个版本或改编，情节与结局未必一致。阅读前留意版本信息，可减少理解上的困惑。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="block" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>常见问题</h2>
+        <p>关于豪侠题材，初次接触者最常提出的几个问题。</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>“豪侠传”是某一部具体作品吗？</summary>
+          <div class="faq-body">
+            “豪侠传”在不同语境下可能指向不同的作品或题材统称。它更多是对一类以豪侠为主角的武侠故事的概括。
+            若你指的是某一部具体作品，建议以该作品的正式名称、作者与出版信息为准进行确认。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>没有武侠基础，能直接看吗？</summary>
+          <div class="faq-body">
+            可以。武侠故事大多以人物成长为主线，门派与武功设定会随剧情逐步交代。
+            先读故事、后补设定，通常比一开始就背门派谱系更轻松。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>应该先看小说还是先看影视？</summary>
+          <div class="faq-body">
+            取决于你的习惯。偏好细节与心理描写，可先读原著；偏好直观节奏与画面感，可先看影视改编，
+            再回到原著补充细节。两种顺序各有收获。
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>武侠故事里的“侠”到底指什么？</summary>
+          <div class="faq-body">
+            通常指在能力之外仍愿意承担道义责任的人。不同作品对“侠”的诠释各有侧重，
+            有的强调义气，有的强调家国，有的强调对弱者的照拂，这也是武侠题材常读常新的原因。
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>豪侠传</h4>
+        <p>围绕武侠江湖的门派体系、侠客类型与经典叙事，整理一份面向爱好者的入门参考。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#sects">门派体系</a></li>
+          <li><a href="#heroes">侠客类型</a></li>
+          <li><a href="#tropes">经典桥段</a></li>
+          <li><a href="#guide">阅读建议</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul>
+          <li>内容为题材性梳理</li>
+          <li>具体作品以官方信息为准</li>
+          <li>欢迎武侠爱好者参考交流</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">豪侠传 · 武侠江湖题材内容整理</div>
+  </div>
+</footer>
+
+<script>
+  // 平滑锚点跳转（兼容不支持 scroll-behavior 的浏览器）
+  document.querySelectorAll('nav.main-nav a[href^="#"], .hero-actions a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var target = document.querySelector(this.getAttribute('href'));
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  });
+
+  // 常见问题：同时只展开一项，便于阅读
+  var faqs = document.querySelectorAll('.faq-item');
+  faqs.forEach(function(item){
+    item.addEventListener('toggle', function(){
+      if(this.open){
+        faqs.forEach(function(other){
+          if(other !== item){ other.open = false; }
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+  </html>
